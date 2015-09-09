@@ -22,7 +22,7 @@ select,
 textarea,
 button,
 .ui-btn {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 1,1;
 	    font-family: sans-serif /*{global-font-family}*/;
 }

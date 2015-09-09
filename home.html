@@ -37,7 +37,7 @@
 		navigator.notification.confirm(
 			'Keluar dari Aplikasi ?',
 			exitApp,
-			'Info Bunga-Bunga di Kabupaten Cianjur',
+			'PO Bus Pariwisata DKI Jakarta',
 			'Cancel,Ok'
 		);
 	}
@@ -102,25 +102,25 @@
 	<div data-role="header" class="jqm-header">
 	<a href="#nav-panel" data-icon="grid"  data-ajax="false" data-iconpos="notext"></a>
 	<a href="#" onClick="window.location.reload()" data-icon="refresh" data-ajax="false" data-iconpos="notext"></a><div>
-	<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img src="image/iconbunga.png"></h2>
+	<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img src="image/iconbus.png"></h2>
 	<h2 style="white-space: normal;font-weight:bold;font-style:italic;color:#FFAC30;" aria-level="1" role="heading" class="ui-title" id="texthead">
-	INFO SPESIES BUNGA</h2>	</div></div>
+	INFO PO BUS PARIWISATA</h2>	</div></div>
 	<div role="main" data-theme="b"  class="ui-content jqm-content" align="center" style="background-image:url('image/'); background-attachment: fixed; background-repeat: repeat;"  >
 
 <!-- Slider -->
 	<div class="slide" id="tes"></div>
 	
-<!-- ListView BUNGA UTAMA-->
+<!-- ListView Po BUS PARIWISATA-->
 <p style="display:none" >Clicks:  <a id="clicks" >1</a></p>
-<ul id="listbunga" data-role="listview" data-filter="true" data-filter-placeholder="Cari Bunga..." ></ul>
+<ul id="listpo" data-role="listview" data-filter="true" data-filter-placeholder="Cari Po/Alamat Bus Pariwisata..." ></ul>
 <div class="ui-body-d ui-content">
 <img src="image/loading2.gif" width="60px" height="60px" id="loading_gmb"></div>
 <a href="#" data-ajax="false" onclick=" clearTable();clickME();" id="showMore" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-plus" 
 style="display:none" >Show more</a>
 <!-- footer -->
 	<div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Info Bunga-Bunga di Kabupaten Cianjur <span class="jqm-version"></span></p>
-		<p>Copyright 2015 Cipa Development </p2>
+		<p>Po Bus Pariwisata DKI Jakarta <span class="jqm-version"></span></p>
+		<p>Copyright 2014 UC Development </p>
 	</div>
 </div>
 
@@ -128,106 +128,18 @@ style="display:none" >Show more</a>
  <!-- Panel -->
 <div data-role="panel" data-position-fixed="true" data-display="overlay" id="nav-panel">
 		<ul data-role="listview" data-inset="true">
-        <li>  <a id="formbunga" href="" onClick="clearAll();"data-ajax="false" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-search" data-transition="slidedown">Cari Spesies Bunga</a>
+        <li>  <a id="formbus" href="" onClick="clearAll();"data-ajax="false" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-search" data-transition="slidedown">Cari Kendaraan Pariwisata</a>
 		</li>
-		<li><a href="#taman" data-ajax="false" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-info" data-transition="slide">Taman Bunga</a>
-        </li>
 		<li><a href="#bantuan" data-ajax="false" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-alert" data-transition="slide">Bantuan</a>
         </li>
         <li><a href="#tentang" data-ajax="false" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-info" data-transition="slidefade">Tentang</a>
         </li>
 		<li><a href="#" data-ajax="false" onclick="doClose()" data-role="button" class="ui-btn  ui-mini ui-corner-all ui-btn-icon-left ui-icon-delete">Keluar</a></li>
 		<div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Copyright 2015 Cipa Development </p>
+		<p>Copyright 2014 UC Development </p>
 		</div>
 	</div>
 </div>
-
-
-<!--MENU Taman Bunga-->
-	<div  id="taman" data-role="page" id="page" data-theme="a"  class="jqm-demos jqm-home"  >																																						
-<!-- /header -->
-	<div data-role="header" class="jqm-header">	<div>
-	<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img src="image/info.png"  ></h2>
-	<h2 style="white-space: normal;font-weight:bold;" aria-level="1" role="heading" class="ui-title" >TAMAN BUNGA</h2>
-	</div><a href="#home" data-icon="home" data-ajax="false" data-iconpos="notext"></a>
-    </div>
- 	<div role="main" data-theme="a"  class="ui-content jqm-content" align="center" style="background-image:url('image/background.jpg'); background-attachment: fixed; background-repeat: repeat;"  >
-	<div id="detail" class="ui-body-d ui-content" style="font-weight: bold";>
-    <h2 style="text-align:justify;color:yellow;font-style:italic;font-size:14px;">
-	
-	<div data-role="collapsible">
-    <h2>TAMAN BUNGA NUSANTARA</h2>
-    <p><b>TAMAN BUNGA NUSANTARA (TBN)</b><br>
-	<img src="image/tbn.jpg" style="max-width:100%;height:auto;"></p>
-    <p><b>SEJARAH</b><br>
-	Taman Bunga Nusantara merupakan taman display bunga pertama di Indonesia. Taman ini dilengkapi dengan berbagai koleksi tanaman berbunga yang terkenal dan unik dari seluruh dunia. Dengan beratus varietas tanaman berbunga di taman, Taman Bunga Nusantara benar - benar menjadi tempat dimana bunga - bunga dari seluruh dunia tumbuh. Kami menampilkan areal yang sangat luas bagi pertumbuhan bunga - bunga dari Amerika Selatan,  Australia,  Afrika serta Asia. Kami memiliki lahan display bedding plant seluas 50.000 m2.<br><br>
-
-	Ibu Dani Bustanil Arifin , pemakarsa sekaligus Ketua Umum Yayasan Bunga Nusantara, beserta anggota lainnya mulai merintis pembangunan taman ini pada tahun 1992, dan secara intensif pelaksanaan pembangunan tahap awal taman dimulai sejak tahun 1993. Tujuan utama pembangunan taman ini bagi Yayasan Bunga Nusantara adalah menciptakan Taman Bunga Nusantara sebagai salah satu aset wisata  berbasis wisata agro nasional dengan skala internasional. Selain itu, tujuan lain diciptakannya Taman Bunga Nusantara adalah:<br>
-	1. Membantu Pemerintah di bidang pembangunan agrowisata.<br>
-	2. Menyediakan fasilitas dan sarana untuk penelitian, pendidikan, dan meningkatkan  kreatifitas masyarakat.<br>
-	3. Membantu meningkatkan pertumbuhan sektor ekonomi, pendapatan daerah dan masyarakat khususnya petani bunga.<br>
-	4. Melestarikan tanaman langka dan wawasan lingkungan hidup.<br>
-	5. Lapangan kerja masyarakat sekitar.<br>
-	6. Meningkatkan cinta masyarakat akan bunga sebagai sumber pendapatan dan kesejahteraan.<br>
-	7. Menyediakan tempat rekreasi yang sehat bagi wisatawan domestik dan mancanegara.<br>
-	8. Mencari sumber pertumbuhan baru di sektor pertanian.<br><br>
-	<b>ALAMAT</b><br>
-	Jalan Mariwati KM 7 Desa Kawungluwuk Kecamatan Sukaresmi - Cianjur, Jawa Barat <br><br>
-	
-	<b>JAM OPERASIONAL</b><br>
-	Senin - Jumat 08.00 - 17.00 WIB <br>
-	Sabtu, Minggu, dan Libur Nasional 08.00 - 17.30 WIB <br><br>
-	
-	<b>HARGA TIKET MASUK (HTM)</b><br>
-	Per Orang : Rp. 30.000,-<br>
-	Parkir Motor : Rp. 5000,-<br>
-	Parkir Mobil : Rp. 10.000,-<br>
-	Parkir Minubus : Rp. 15.000,-<br>
-	Parkir Bus : Rp. 20.000,- <br><br>
-	
-	<b>KONTAK</b><br>
-	No. Telp: <br>
-	+62 263 581 617<br>
-	+62 263 581 618<br>
-	email: tamanbunganusantara@yahoo.co.id. <br><br>
-	
-	<b>WEBSITE</b><br>
-	<a href="www.krcibodas.lipi.go.id">www.tamanbunga-nusantara.com. </a></br>	
-	</p>
-	</div>
-	
-	<div data-role="collapsible">
-    <h2 style="text-align:justify">KEBUN RAYA CIBODAS</h2>
-	<p><b>KEBUN RAYA CIBODAS</b><br>
-	<img src="image/krc.png" style="max-width:100%;height:auto;"></p>
-    <p><b>SEJARAH</b><br>
-	Didirikan pada tanggal 11 April 1852 oleh Johannes Ellias Teijsmann, seorang kurator Kebun Raya Bogor pada waktu itu, dengan nama Bergtuin te Tjibodas (Kebun Pegunungan Cibodas). Pada awalnya dimaksudkan sebagai tempat aklimatisasi jenis-jenis tumbuhan asal luar negeri yang mempunyai nilai penting dan ekonomi yang tinggi, salah satunya adalah Pohon Kina (Cinchona calisaya). Kemudian berkembang menjadi bagian dari Kebun Raya Bogor dengan nama Cabang Balai Kebun Raya Cibodas. Mulai tahun 2003 status Kebun Raya Cibodas menjadi lebih mandiri sebagai Unit Pelaksana Teknis Balai Konservasi Tumbuhan Kebun Raya Cibodas di bawah Pusat Konservasi Tumbuhan Kebun Raya Bogor dalam kedeputian Ilmu Pengetahuan Hayati Lembaga Ilmu Pengetahuan Indonesia (LIPI).<br><br>
-
-	Lokasi Kebun Raya Cibodas – LIPI berada di kaki Gunung Gede dan Gunung Pangrango pada ketinggian kurang lebih 1.300 – 1.425 meter di atas permukaan laut dengan luas 84,99 hektar. Temperatur rata-rata 20,06 °C, kelembaban 80,82 % dan rata-rata curah hujan 2.950 mm per tahun. Kebun Raya Cibodas merupakan tempat yang nyaman untuk beristirahat sambil menikmati keindahan berbagai jenis tumbuhan yang berasal dari Indonesia dan negara-negara lain. Kebun Raya Cibodas berjarak ±100 KM dari Jakarta dan ± 80 KM dari Bandung.<br><br>
-	<b>ALAMAT</b><br>
-	Jl. Kebun Raya Cibodas, Cipanas, Sindanglaya, Kec. Cianjur, Jawa Barat 43253.<br><br>
-	
-	<b>JAM OPERASIONAL</b><br>
-	Senin – Minggu Pukul 08.00 WIB  sampai pukul 17.00 WIB.<br><br>
-	
-	<b>HARGA TIKET MASUK (HTM)</b><br>
-	Rp. 9.500,- per orang, Tiket kendaraan roda dua Rp 5.000,- per motor dan tiket kendaraan roda empat Rp 16.000,-.<br><br>
-	
-	<b>KONTAK</b><br>
-	No. Telp: (0263) 512233<br>
-	email: jasin.krcibodas@mail.lipi.go.id. <br><br>
-	
-	<b>WEBSITE</b><br>
-	<a href="www.krcibodas.lipi.go.id">www.krcibodas.lipi.go.id. </a><br>	
-	</p>
-	</div>
-		<br><br><b>By: Cipa Development</b></h2>
-		</div>
-    </div>
-	</div>
-
-
 
 
 <!--MENU bantuan-->
@@ -242,13 +154,48 @@ style="display:none" >Show more</a>
 	
 	
 	<div id="detail" class="ui-body-d ui-content" style="font-weight: bold";>
-	Deskripsi
+	<h2 style="font-weight:bold">Home</h2>
+	<img src="image/bantuan1.jpg"><br><br>
+	<p style="text-align:justify;color:yellow;">Nomor 1 : <i style="color:white;">Tombol ini adalah tombol menu panel, terdapat pilihan Cari kendaraan pariwisata, bantuan, tentang dan keluar dari aplikasi. </i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 2 : <i style="color:white;">Tombol ini digunakan untuk memuat ulang (Refresh) halaman home.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 3 : <i style="color:white;">Bagian ini digunakan untuk melakukan pencarian Nama PO Bus atau Alamatnya.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 4 : <i style="color:white;">list ini dapat digunakan untuk masuk ke halaman kendaraan yang dimiliki po bus lebih spesifik mengenai kendaraan dari PO Bus yang dipilih.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 5 : <i style="color:white;">Tombol Show more ini digunakan untuk menambah sebanyak 4 buah List Nama PO Bus baru yang ada di database.</i></p>
+	<hr></hr><br> 
+	
+	<h2 style="font-weight:bold">Cari Kendaraan Pariwisata</h2>
+	<img src="image/bantuan2.jpg"><br><br>
+	<p style="text-align:justify;color:yellow;">Halaman ini digunakan untuk melakukan pencarian lebih spesifik sesuai kriteria yang sudah ditentukan.<br>
+	<p style="text-align:justify;color:yellow;">Nomor 1 : <i style="color:white;">Tombol ini adalah tombol untuk kembali ke halaman menu utama atau home. </i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 2 : <i style="color:white;">List Box ini digunakan untuk memilih kriteria Jenis Kendaraan.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 3 : <i style="color:white;">List Box ini digunakan untuk memilih kriteria Kapasitas Kendaraan.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 4 : <i style="color:white;">Tombol ini digunakan untuk melakukan pencarian sesuai kriteria yang ditentukan.</i></p>
+	<hr></hr><br> 
+	
+	<h2 style="font-weight:bold">Kendaraan PO Bus</h2>
+	<img src="image/bantuan3.jpg"><br><br>
+	<p style="text-align:justify;color:yellow;">Nomor 1 : <i style="color:white;">Tombol ini adalah tombol untuk kembali ke halaman menu utama atau home. </i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 2 : <i style="color:white;">Tombol ini digunakan untuk memuat ulang (Refresh) halaman Kendaraan PO Bus.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 3 : <i style="color:white;">Bagian ini digunakan untuk melakukan pencarian Jenis Kendaraan atau Fasilitasnya.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 4 : <i style="color:white;">list ini dapat digunakan untuk masuk ke halaman Detail kendaraan yang dimiliki kendaraan secara lebih detail.</i></p>
+	<hr></hr><br> 
+	
+	<h2 style="font-weight:bold">Detail Po Bus Pariwisata</h2>
+	<img src="image/bantuan4.jpg"><br><br>
+	<p style="text-align:justify;color:yellow;">Nomor 1 : <i style="color:white;">Tombol ini adalah tombol untuk kembali ke halaman kendaraan Po Bus.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 2 : <i style="color:white;">Tombol ini adalah tombol untuk kembali ke halaman menu utama atau home.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 3 : <i style="color:white;">Bagian Slide Show ini, dapat menggantikan fungsi Refresh jika disentuh.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 4 : <i style="color:white;">Bagian Nav Bar Detail ini digunakan untuk menampilkan detail dari kendaraan yang sudah dipilih.</i><br> 
+	<p style="text-align:justify;color:yellow;">Nomor 5 : <i style="color:white;">Bagian Nav Bar Lokasi ini digunakan untuk menampilkan Maps atau lokasi Po Bus berada, dan jika disentuh bagian map-marker nya, maka akan muncul alamat lengkap dari Po Bus tersebut.</i></p>
+	<p style="text-align:justify;color:yellow;">Nomor 6 : <i style="color:white;">Bagian Nav Bar Kontak ini digunakan untuk menampilkan kontak telepon, fax dan email dari Po Bus, list ini bisa terintegrasi dengan kontak dan email yang ada pada smartphone.</i><br>
+	<p style="text-align:justify;color:yellow;">Nomor 7 : <i style="color:white;">Bagian harga ini menampilkan harga dalam bentuk gambar yang bisa diperbesar (zoom-in) atau diperkecil (Zoom-out).</i><br>
+	<p style="text-align:justify;color:yellow;">Nomor 8 : <i style="color:white;">Bagian teks itu memberikan tanda adanya perubahan data terakhir yang dilakukan oleh database.</i><br>
 	</div>
     </div>
 <!-- /footer -->
 	<div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Info Bunga-Bunga di Kabupaten Cianjur <span class="jqm-version"></span></p>
-		<p>Copyright 2015 Cipa Development </p2>
+		<p>Po Bus Pariwisata DKI Jakarta <span class="jqm-version"></span></p>
+		<p>Copyright 2014 UC Development </p>
 	</div>
 	</div>
  
@@ -265,28 +212,30 @@ style="display:none" >Show more</a>
 	<div id="detail" class="ui-body-d ui-content" style="font-weight: bold";>
         <h2 style="text-align:justify;color:yellow;font-style:italic;font-size:14px;"><li>
 		<b style="color:white;font-size:16px;">Deskripsi:</b>
-		<b style="color:white;font-size:16px;">Fitur:</b> Terdapat informasi.</li><br>
-		<b style="color:white;font-size:14px;">Kritik, Saran Aplikasi.</b><br>
-		<a href="mailto:"><img src="image/email.png" align="left" width="45px" height="45px" /><br><b style="color:white;font-size:14px;"><u>email: </u></b></a>
-		<br><br><b>By: Cipa Development</b></li></h2>
+		Aplikasi Sistem Informasi PO BUS PARIWISATA DKI JAKARTA ini berisi informasi mengenai Perusahaan Otobus Pariwisata atau PO Bus Pariwisata beserta fasilitas kendaraan yang dimiliki oleh PO Bus khusus daerah DKI JAKARTA.</li><br><br><li>
+		<b style="color:white;font-size:16px;">Tujuan:</b> Untuk mempermudah para pengguna fasilitas BUS atau Kendaraan pariwisata dalam mencari, memilih, dan menentukan pilihan Kendaraan apa dan Perusahaan Otobus mana yang akan dipilih untuk berwisata khususnya untuk masyarakat di DKI JAKARTA</li><br><br><li>
+		<b style="color:white;font-size:16px;">Fitur:</b> Terdapat informasi Nama PO Bus Pariwisata, Alamat, Kontak, Fasilitas Mobil, Map dan *Harga.</li><br>
+		<b style="color:white;font-size:14px;">Kritik, Saran Aplikasi, dan Pemasangan Iklan PO.</b><br>
+		<a href="mailto:hidayat.ahmad896@gmail.com"><img src="image/email.png" align="left" width="45px" height="45px" /><br><b style="color:white;font-size:14px;"><u>email: hidayat.ahmad896@gmail.com</u></b></a>
+		<br><br><b>By: UC Development</b></li></h2>
 		</div>
     </div>
  
  <!-- /footer -->
 	<div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Info Bunga-Bunga di Kabupaten Cianjur <span class="jqm-version"></span></p>
-		<p>Copyright 2015 Cipa Development </p2>
+		<p>Po Bus Pariwisata DKI Jakarta <span class="jqm-version"></span></p>
+		<p>Copyright 2014 UC Development </p>
 	</div>
 	</div>
 	
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->	
 	
-	<!-- MENU FORM BUNGA -->
-<div  data-role="page" id="formbunga" data-theme="a"  class="jqm-demos jqm-home"  >													
+	<!-- MENU FORM BUS -->
+<div  data-role="page" id="formbus" data-theme="a"  class="jqm-demos jqm-home"  >													
 	<div data-role="header" class="jqm-header"   >
 	<div>
-	<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img src="image/iconbunga.png"  ></h2>
-	<h2 style="white-space: normal;font-weight:bold;" aria-level="1" role="heading" class="ui-title">CARI SPESIES BUNGA</h2>	
+	<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img src="image/iconbus.png"  ></h2>
+	<h2 style="white-space: normal;font-weight:bold;" aria-level="1" role="heading" class="ui-title">CARI KENDARAAN PARIWISATA</h2>	
 	</div><a href="#home" data-icon="home" data-ajax="false" data-iconpos="notext"></a>
 	</div>
 	<div role="main" data-theme="b"  class="ui-content jqm-content" align="center" style="background-image:url('image/'); background-attachment: fixed; background-repeat: repeat;"  >
@@ -294,31 +243,39 @@ style="display:none" >Show more</a>
  <!--Slider-->
 	<div class="slide" id="tes2"> </div>
 	
-<!-- Page Form Bunga -->
+<!-- Page Form Bus -->
 	<div data-role="main" class="ui-form" >			
 		<div class="ui-field-contain">
-		<label for="select-choice-a" class="select">ASAL NEGARA</label>
-		<select name="select-choice-a" id="asneg" data-native-menu="false" width="80px">
-			<option>ASAL NEGARA</option>
-            <option value="">AFRIKA</option>			
-            <option value="">BRAZIL</option>
-            <option value="">CHINA</option>			
-            <option value="">INDIA</option>
-            <option value="">JEPANG</option>
-			<option value="">MEXICO</option>
-			<option value="">VIETNAM</option>			
+		<label for="select-choice-a" class="select">JENIS KENDARAAN :</label>
+		<select name="select-choice-a" id="jkend" data-native-menu="false" width="80px">
+			<option>BUS/MICROBUS/MOBIL PRIBADI</option>
+            <option value="">KELUARGA</option>
+			<option value="">MICRO BUS</option>
+            <option value="">MEDIUM BUS</option>
+            <option value="">BIG BUS</option>
         </select>
-		</div>
+		<label for="select-choice-a" class="select">KAPASITAS :</label>
+		<select name="select-choice-a" id="kps" data-native-menu="false" width="80px">
+			<option>JUMLAH KURSI</option>
+            <option value="6">6 -14 Seat</option>
+			<option value="1">14-19 Seat</option>
+            <option value="2">20-29 Seat</option>
+            <option value="3">30-39 Seat</option>
+            <option value="4">40-49 Seat</option>
+            <option value="5">50-59 Seat</option>
+        </select>
+        </div>
       <input onClick="clearForm()" id="cari" type="submit" data-inline="true" value="CARI">
 	  <hr></hr>
 	  <p id="hasil" style="text-align:justify;color:yellow;font-weight:bold;font-style:italic;font-size:16px;"></p>
-		<p id="cariasneg" style="display:none"></p>
+		<p id="carijkend" style="display:none"></p>
+        <p id="carikps" style="display:none"></p>
       <ul id="autocomplete" data-role="listview"></ul>
   	</div>
 	<!-- /footer -->
 	<div data-theme="a" data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Info Bunga-Bunga di Kabupaten Cianjur <span class="jqm-version"></span></p>
-		<p>Copyright 2015 Cipa Development </p2>
+		<p>Po Bus Pariwisata DKI Jakarta <span class="jqm-version"></span></p>
+		<p>Copyright 2014 UC Development </p>
 	</div>
 	</div>
 </div>
@@ -361,23 +318,23 @@ Catatan:
     });
   }
  
-<!--Menampilkan/query data dari Class/table Bunga-->
+<!--Menampilkan/query data dari Class/table Po_bus-->
  
 	function loadPages()
   {
-    Apiomat.Bunga.getBungas(undefined, 
+    Apiomat.Po_bus.getPo_buss(undefined, 
     {
     onOk:function(bases) 
 	{
     var clicks = bases.length - count ;
         if ( clicks < 0) { 
       	 for (var i=0; i < bases.length;i++) {
-          addToPageBunga(bases[i]);       
+          addToPageBus(bases[i]);       
         }
       }
       else {    
       	for (var i=clicks; i < bases.length;i++) {
-          addToPageBunga(bases[i]);    
+          addToPageBus(bases[i]);    
         }
       }
 	},
@@ -388,8 +345,8 @@ Catatan:
 	});
   }
 
-  <!--Melakukan Query data List Bunga-->
- function addToPageBunga(base)
+  <!--Melakukan Query data-->
+ function addToPageBus(base)
   {
 		var tes = document.getElementById("tes");
 		var img= document.createElement("img");img.src = base.getIconURL();
@@ -406,38 +363,38 @@ Catatan:
 	var ldg = document.getElementById("loading_gmb");
 	ldg.style.display='none';  
 	
-	var listbunga = document.getElementById("listbunga");
+	var listpo = document.getElementById("listpo");
     var option2 = document.createElement("li");
     option2.style.textAlign = 'center'; 
     option2.className = "ui-first-child ui-last-child ui-li-has-thumb "; 
-    listbunga.appendChild(option2);  
+    listpo.appendChild(option2);  
     var result = document.createElement("a");
     result.className = "ui-btn ui-btn-icon-right ui-icon-carat-r";
     result.style.color = "#fff";
     result.style.textAlign = 'left'  
     option2.appendChild(result); 
-    result.innerHTML = base.getNm_bunga();
-    result.value = base.getKd_bunga();
+    result.innerHTML = base.getNmpo();
+    result.value = base.getKdpo();
     var img2 = document.createElement("img");img2.src = base.getIconURL();
 	img2.className = "imgcenter";
 	var p1 = document.createElement("p");
-    p1.innerHTML = "<b>Lokasi Taman Bunga : </b>"+base.getLokasi();
+    p1.innerHTML = "<b>Alamat : </b>"+base.getAlmtpst();
     result.appendChild(img2);
     result.appendChild(p1);
 	result.onclick = 	function () {
-    window.location.href ="bunga.html?id="+  result.value ;
+    window.location.href ="pobus.html?id="+  result.value ;
 	}   
 }
 
-<!--Menampilkan/query data dari Class/table Detail-->
+<!--Menampilkan/query data dari Class/table Detailmobil-->
   function loadPages2()
   {
-      Apiomat.Detail.getDetails(undefined, 
+      Apiomat.Detailmobil.getDetailmobils(undefined, 
      {
      
-     onOk:function(dtbungas) 
-     { for (var i=0; i < dtbungas.length;i++) 
-     { addToPageDtbunga(dtbungas[i]);}
+     onOk:function(mobils) 
+     { for (var i=0; i < mobils.length;i++) 
+     { addToPageMobil(mobils[i]);}
   },
   onError: function(error) {
     status.innerHTML = "Can't load list: "+ error.statusCode + " --> " + error.message;
@@ -447,10 +404,10 @@ Catatan:
   }
 
   <!--Melakukan Query data-->
-  function addToPageDtbunga(dtbunga)
+  function addToPageMobil(mobil)
   {
 		var tes2 = document.getElementById("tes2");
-		var img= document.createElement("img");img.src = dtbunga.getGmb1URL();
+		var img= document.createElement("img");img.src = mobil.getGmb1URL();
 		img.style.background="url('image/noimage.png') center no-repeat ";
 		tes2.appendChild(img);
 		$('#tes2').cycle({ 
@@ -458,10 +415,10 @@ Catatan:
 		delay: -2000
 		});
 	  	   
-      var formbunga = document.getElementById("formbunga");
-	  formbunga.value = dtbunga.getKd_detail();
-	  formbunga.onclick = function () {
-      window.location.href ="home.html#formbunga?id=" + formbunga.value;
+      var formbus = document.getElementById("formbus");
+	  formbus.value = mobil.getKdkend();
+	  formbus.onclick = function () {
+      window.location.href ="home.html#formbus?id=" + formbus.value;
 	  }  
 	  }   
 	  
@@ -469,9 +426,10 @@ Catatan:
  
 	function loadSearch()
   {   
-     var a =  document.getElementById("cariasneg").innerHTML ;
-     var yf = "asal_negara like"+'"'+a+'"';
-     Apiomat.Detail.getDetails( yf, 
+     var a =  document.getElementById("carijkend").innerHTML ;
+     var b = document.getElementById("carikps").innerHTML
+     var yf = "jenis like"+'"'+a+'"'+"or"+" "+ "kapasitas startswith"+'"'+b+'"' ;
+     Apiomat.Detailmobil.getDetailmobils( yf, 
      {
      onOk:function(searchs)
      {
@@ -510,30 +468,32 @@ Catatan:
 		result.style.textAlign = 'left'  
 		result.style =  "white-space: normal;";
 		option2.appendChild(result); 
-		result.innerHTML = search.getNm_bunga_det() +" - Asal Negara: "+ search.getAsal_negara();
-		result.value = search.getKd_detail();
+		result.innerHTML = search.getJenis() +" - "+ search.getKapasitas();
+		result.value = search.getKdkend();
 		var img = document.createElement("img");img.src = search.getGmb1URL();
 		img.className = "imgcenter";
 		var p1 = document.createElement("p");
-		p1.innerHTML = "Karakteristik: "+ search.getKarakter();
+		p1.innerHTML = search.getFasilitas();
 		result.appendChild(img);
 		result.appendChild(p1);
 		result.onclick = 	function () {
-		window.location.href ="bunga.html#detail?id="+  result.value ;
+		window.location.href ="pobus.html#detail?id="+  result.value ;
 	    }
 	  }
 
 function cari() {
-	var cari = $( "#asneg option:selected" ).text();
-	var test1 = document.getElementById("cariasneg").innerHTML= cari;
+	var cari = $( "#jkend option:selected" ).text();
+	var test1 = document.getElementById("carijkend").innerHTML= cari;
+	var cari2 = $( "#kps option:selected" ).val();
+	var test2 = document.getElementById("carikps").innerHTML= cari2;
 	loadSearch();
 }
 	
  <!--Showmore-->
 	 
-		var count = 6;
+		var count = 8;
          function clickME() {
-          count +=3;
+          count +=4;
            document.getElementById("clicks").innerHTML = count;
            var sM = document.getElementById("showMore");
            sM.style.display=(sM.style.display!='none')?'none':'';	
@@ -543,7 +503,7 @@ function cari() {
             
           function clearTable()
           {
-          var table = document.getElementById("listbunga");
+          var table = document.getElementById("listpo");
           table.innerHTML = '';
           }
           
